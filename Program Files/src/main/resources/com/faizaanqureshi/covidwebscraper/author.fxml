@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="408.0" prefWidth="825.0" style="-fx-background-color: #202020;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+   <center>
+      <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="826.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="514.0" prefWidth="826.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Region prefHeight="385.0" prefWidth="66.0" />
+                  <VBox prefHeight="385.0" prefWidth="230.0">
+                     <children>
+                        <Region prefHeight="105.0" prefWidth="230.0" VBox.vgrow="ALWAYS" />
+                        <ImageView fitHeight="200.0" fitWidth="200.0">
+                           <image>
+                              <Image url="@../../../imgs/faizaanqureshi.jpg" />
+                           </image>
+                        </ImageView>
+                        <Region prefHeight="126.0" prefWidth="230.0" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+                  <Region prefHeight="385.0" prefWidth="18.0" />
+                  <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Region prefHeight="70.0" prefWidth="510.0" VBox.vgrow="ALWAYS" />
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="COVID-19 Statistics is a Java application written using JSoup and JavaFX in 2022 by Faizaan Qureshi scraping information from the World-O-Meter website." wrappingWidth="510.13676834106445">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Region prefHeight="0.0" prefWidth="510.0" VBox.vgrow="ALWAYS" />
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Faizaan Qureshi is a student at the University of Waterloo and Wilfrid Laurier University at the time of writing enrolled in the CS/BBA double degree program. Expertise in Java, C, Python, and HTML/CSS." wrappingWidth="490.10783767700195">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Region prefHeight="47.0" prefWidth="510.0" />
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Instagram:" />
+                        <Hyperlink onAction="#instagram" text="https://www.instagram.com/faizaanqureshi_/?hl=en" />
+                        <Region prefHeight="5.0" prefWidth="510.0" />
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="GitHub:" />
+                        <Hyperlink onAction="#github" text="https://github.com/faizaanqureshi" />
+                        <Region prefHeight="3.0" prefWidth="510.0" />
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Linkedin:" />
+                        <Hyperlink onAction="#linkedin" text="https://www.linkedin.com/in/faizaan-qureshi-193b6319b/?originalSubdomain=ca" />
+                        <Region prefHeight="74.0" prefWidth="510.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="© 2022 Faizaan Qureshi">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

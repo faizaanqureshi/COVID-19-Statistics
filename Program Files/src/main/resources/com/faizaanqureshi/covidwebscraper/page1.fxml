@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="614.0" prefWidth="879.0" style="-fx-background-color: #202020;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="About">
+               <items>
+                  <MenuItem onAction="#author" mnemonicParsing="false" text="Author" />
+               </items></Menu>
+          <Menu mnemonicParsing="false" text="Continent">
+            <items>
+              <MenuItem fx:id="africa" mnemonicParsing="false" onAction="#handleAfrica" text="Africa" />
+                  <MenuItem fx:id="asia" mnemonicParsing="false" onAction="#handleAsia" text="Asia" />
+                  <MenuItem fx:id="europe" mnemonicParsing="false" onAction="#handleEurope" text="Europe" />
+                  <MenuItem fx:id="northAmerica" mnemonicParsing="false" onAction="#handleNorthAmerica" text="North America" />
+                  <MenuItem fx:id="oceania" mnemonicParsing="false" onAction="#handleOceania" text="Oceania" />
+                  <MenuItem fx:id="southAmerica" mnemonicParsing="false" onAction="#handleSouthAmerica" text="South America" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Country">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleCountry" text="Search..." />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Region maxHeight="50.0" prefHeight="6.0" prefWidth="879.0" VBox.vgrow="ALWAYS" />
+            <HBox alignment="TOP_CENTER" prefHeight="131.0" prefWidth="879.0">
+               <children>
+                  <Region maxHeight="100.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <VBox alignment="TOP_CENTER" prefHeight="574.0" prefWidth="495.0">
+                     <children>
+                        <Label fx:id="title" alignment="CENTER" prefHeight="66.0" prefWidth="490.0" text="COVID-19 Worldwide Statistics" textFill="WHITE">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="21.0" prefWidth="120.0" text="Total Cases" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalCasesWorldWide" style="-fx-text-fill: #50a9c1;" text="Lorem" textAlignment="CENTER" textFill="#50a9c1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Region prefHeight="100.0" prefWidth="183.0" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <Region maxHeight="66.0" prefHeight="47.0" prefWidth="879.0" VBox.vgrow="ALWAYS" />
+            <HBox prefHeight="71.0" prefWidth="879.0">
+               <children>
+                  <Region maxHeight="100.0" prefHeight="62.0" prefWidth="119.0" HBox.hgrow="ALWAYS" />
+                  <VBox alignment="TOP_CENTER">
+                     <children>
+                        <Label alignment="CENTER" text="New Cases" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="newCasesWorldWide" style="-fx-text-fill: #50a9c1;" text="Lorem" textAlignment="CENTER" textFill="#50a9c1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Region maxHeight="100.0" prefHeight="62.0" prefWidth="144.0" HBox.hgrow="ALWAYS" />
+                  <VBox alignment="TOP_CENTER">
+                     <children>
+                        <Label alignment="CENTER" text="Total Deaths" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalDeathsWorldWide" style="-fx-text-fill: #50a9c1;" text="Lorem" textAlignment="CENTER" textFill="#50a9c1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Region maxHeight="100.0" prefHeight="62.0" prefWidth="130.0" HBox.hgrow="ALWAYS" />
+                  <VBox alignment="TOP_CENTER">
+                     <children>
+                        <Label alignment="CENTER" text="New Deaths" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="newDeathsWorldWide" style="-fx-text-fill: #50a9c1;" text="Lorem" textAlignment="CENTER" textFill="#50a9c1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Region maxHeight="100.0" prefHeight="62.0" prefWidth="98.0" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <Region maxHeight="86.0" prefHeight="48.0" prefWidth="879.0" />
+            <HBox prefHeight="78.0" prefWidth="879.0">
+               <children>
+                  <Region maxHeight="100.0" prefHeight="89.0" prefWidth="87.0" HBox.hgrow="ALWAYS" />
+                  <VBox alignment="TOP_CENTER">
+                     <children>
+                        <Label alignment="CENTER" text="Total Recovered" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalRecoveredWorldWide" style="-fx-text-fill: #50a9c1;" text="Lorem" textAlignment="CENTER" textFill="#50a9c1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Region maxHeight="100.0" prefHeight="66.0" prefWidth="90.0" HBox.hgrow="ALWAYS" />
+                  <VBox alignment="TOP_CENTER">
+                     <children>
+                        <Label alignment="CENTER" text="New Recovered" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="newRecoveredWorldWide" style="-fx-text-fill: #50a9c1;" text="Lorem" textAlignment="CENTER" textFill="#50a9c1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Region maxHeight="100.0" prefHeight="89.0" prefWidth="104.0" HBox.hgrow="ALWAYS" />
+                  <VBox alignment="TOP_CENTER">
+                     <children>
+                        <Label alignment="CENTER" text="Active Cases" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="activeCasesWorldWide" style="-fx-text-fill: #50a9c1;" text="Lorem" textAlignment="CENTER" textFill="#50a9c1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Region maxHeight="100.0" prefHeight="89.0" prefWidth="90.0" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <Region maxHeight="130.0" prefHeight="54.0" prefWidth="879.0" />
+            <HBox prefHeight="78.0" prefWidth="879.0">
+               <children>
+                  <Region maxHeight="100.0" prefHeight="62.0" prefWidth="111.0" HBox.hgrow="ALWAYS" />
+                  <VBox alignment="TOP_CENTER">
+                     <children>
+                        <Label alignment="CENTER" text="Critical Cases" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="seriousCasesWorldWide" style="-fx-text-fill: #50a9c1;" text="Lorem" textAlignment="CENTER" textFill="#50a9c1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Region maxHeight="100.0" prefHeight="62.0" prefWidth="122.0" HBox.hgrow="ALWAYS" />
+                  <VBox alignment="TOP_CENTER">
+                     <children>
+                        <Label alignment="CENTER" text="Tot Cases/1M" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totCasesPerMillionWorldWide" style="-fx-text-fill: #50a9c1;" text="Lorem" textAlignment="CENTER" textFill="#50a9c1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Region maxHeight="100.0" prefHeight="62.0" prefWidth="136.0" HBox.hgrow="ALWAYS" />
+                  <VBox alignment="TOP_CENTER">
+                     <children>
+                        <Label alignment="CENTER" text="Death/1M" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="deathsPerMillionWorldWide" style="-fx-text-fill: #50a9c1;" text="Lorem" textAlignment="CENTER" textFill="#50a9c1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Region maxHeight="100.0" prefHeight="62.0" prefWidth="109.0" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <Region maxHeight="1.7976931348623157E308" prefHeight="80.0" prefWidth="879.0" VBox.vgrow="ALWAYS" />
+            <HBox alignment="TOP_CENTER" prefHeight="16.0" prefWidth="879.0">
+               <children>
+                  <Region maxHeight="100.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <VBox alignment="TOP_CENTER" prefHeight="574.0" prefWidth="495.0">
+                     <children>
+                        <Label alignment="CENTER" text="© 2022 Faizaan Qureshi" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Region prefHeight="100.0" prefWidth="183.0" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

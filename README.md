@@ -1,2 +1,8 @@
-# COVID-19-Statistics
-A simple Java application that displays the latest COVID-19 statistics from across the globe using JSoup and JavaFX
+# COVID-19 Statistics
+An application that scrapes the web for the latest COVID-19 statistics from across the globe. Made using Java with JSoup and JavaFX libraries.
+
+# Built With
+* Java - Language
+
+# License
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/qfaizaan/Astroworld/blob/master/LICENSE.md) file for details
