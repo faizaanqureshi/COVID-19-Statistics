@@ -5,4 +5,4 @@ An application that scrapes the web for the latest COVID-19 statistics from acro
 * Java - Language
 
 # License
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/qfaizaan/Astroworld/blob/master/LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/faizaanqureshi/COVID-19-Statistics/blob/main/LICENSE.md) file for details
